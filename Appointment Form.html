@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="C:/Users/DELL/Desktop/HTML/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="C:/Users/DELL/Desktop/HTML/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="C:/Users/DELL/Desktop/HTML/favicon-16x16.png">
+    <link rel="manifest" href="C:/Users/DELL/Desktop/HTML/site.webmanifest">
+    <style>
+            *{
+            font-family:'Courier New', Courier, monospace ;
+            box-sizing:content-box;
+        }
+
+        body{
+            font-weight: bold;
+            font-style: italic;
+            text-align: left;
+            padding: 8px;
+            margin:15px 30px;
+            font-size: 18px ;
+            background-color: tomato;
+        }
+        .container{
+            background-color: #f2f2f2;
+            padding:5px 20px 15px 20px;
+            border:1px solid lightgrey;
+            border-radius: 8px;
+            box-shadow: 10px 10px 5px rgb(39, 39, 39);
+        }
+        legend{
+            text-align: left;
+        }
+        input[type = "text"],
+        input[type = "email"],
+        input[type = "number"],
+        input[type = "password"],
+        input[type = "date"],
+        input[type = "tel"],
+        select,textarea{
+            width:95%;
+            padding: 12px;
+            border:1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        h2{
+            text-align: center;
+        }
+
+        input[type="submit"]{
+            background-color: royalblue;
+            font-size: 15px;
+            padding: 8px;
+            border-radius: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            border:none;
+            width: 80%;
+        }
+        input[type = "submit"]:hover{
+            background-color: skyblue;
+        }
+        a:link{
+            color:skyblue;
+        }
+        a:hover{
+            color:rgb(116, 0, 116);
+        }   
+        a:active{
+            color:blue;
+        }
+        h2{
+            letter-spacing: 0.20em;
+        }
+    </style>
+</head>
+    <body>
+        <center>
+            <h2><u>Appointment Form</u></h2>
+        </center>
+    
+    <div class = "container">
+    <p>*mandatory to be filled</p>
+    <hr>
+    <form method="post" action="C:\Users\DELL\Desktop\appointmentdatabase.php">
+    
+    <fieldset>
+        <legend>Patient Details</legend>
+        Patient's First Name*:<input type="text" name = "fname" value ="" placeholder="Enter First Your Name">
+        Patients's Last Name:<input type="text" name = "lname" value ="" placeholder="Enter Last Your Name">
+    </fieldset>
+        <br>
+<hr>
+    <fieldset>
+        <legend>Gender*:</legend> 
+        <br>
+        Male:<input type="radio" name = "Gender">
+        Female:<input type="radio" name = "Gender">
+        Other:<input type="radio" name = "Gender">
+    </fieldset>
+        <br>
+<hr>
+    <fieldset>
+        <legend>Contact Information:**</legend>
+        Mobile Number:<input type = "tel" name ="Mob No" value ="" placeholder = "Mobile Number">
+        Residential Number:<input type = "tel" name ="Res No" value ="" placeholder = "Residential Number">
+        Email Id:<input type="email" name = "Email" value ="" placeholder="Your Email-Id">
+    </fieldset>
+<hr>
+    <fieldset>
+        <legend>Contact Information:**</legend>
+            Residential Address:<input type = "text" name ="address" value ="" placeholder = "Your Residential Address">
+            Pincode:<input type = "text" name = "pincode" value =""  pattern = "[0-9]{6}" maxlength = "6" placeholder = "Enter Your Area Pincode">
+            City:
+         
+            <select name = "cities">
+                <option value="">--Select Your City--</option>
+                <option value="Pali">Pali</option>
+                <option value="Jodhpur">Jodhpur</option>
+                <option value="Ajmer">Ajmer</option>
+                <option value="Jaisalmer">Jaisalmer</option>
+                <option value="Bhilwara">Bhilwara</option>
+            </select>
+    </fieldset>
+<hr>
+    <fieldset>
+        <legend>Appointment Details:</legend><br>
+        Appointment Date: <input type = "date" name = "Book Appt" value = "">
+        Symptoms: <input type = "text" name = "symptoms" value = "" placeholder="Type Your Symptoms Here">
+    </fieldset>
+<br>
+    <center>
+    <input type = "submit" name = "Book Appointment Now" value = "Book Now">
+</center>
+    </div>
+    </body>
+</html>

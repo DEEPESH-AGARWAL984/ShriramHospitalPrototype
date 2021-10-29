@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHRI RAM HOSPITAL | HOME PAGE</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="C:/Users/DELL/Desktop/HTML/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="C:/Users/DELL/Desktop/HTML/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="C:/Users/DELL/Desktop/HTML/favicon-16x16.png">
+    <link rel="manifest" href="C:/Users/DELL/Desktop/HTML/site.webmanifest">
+    
+    
+    <!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-style: italic;
+            box-sizing: border-box;
+            list-style: none;  
+        }
+        body{
+            margin: 0px;
+            background-color: tomato;
+        }
+        header{
+            padding: 30px;
+            background-color: tomato;
+            color:black;
+            /* font-style: italic; */
+            font-family: sans-serif;
+            font-size: 20px;
+            margin-top: 0px;
+        }
+        footer,nav{
+            display: flex;
+            background-color: #333;
+            /* overflow: hidden; */
+        }
+        footer a,nav a{
+            display:block;
+            text-decoration: none;
+            padding: 14px 20px;
+            color:white;
+            font-size: 20px;
+            text-align: center;
+           
+        }
+        /* footer{
+            background-color: #333;
+            overflow:hidden;
+            margin:0px;
+        } */
+      /* footer a{
+          text-decoration: none;
+          padding:14px 20px;
+          text-align: center;
+          float:left;
+          color:white;
+      } */
+    section{
+        text-align: center;
+        padding:75px 40px ;
+        min-height: 40vh;
+        height:100%;
+    }
+    section:nth-child(odd){
+        background-color: #ececee;
+    }
+    /* iframe{
+        padding: 0px 10px;
+    } */
+    video{
+        padding: 0px 10px;
+    }
+    img{
+        padding: 0px 10px;
+        
+    }
+    .copyright{
+        float: right;
+    }
+
+    section h4{
+        margin: 0px 130px;
+        margin-bottom: 25px;
+    }
+    .banner{
+        background-position: top center;
+        background-size:50%;
+        /* height:20vw; */
+        min-height: 100px;
+        background-repeat: no repeat;
+        background-attachment: fixed;
+    }
+
+    @media screen  and (max-width:700px){
+        footer,nav{
+            flex-direction: column;
+            padding: 10px 0px;
+        }
+        .flex-align-right{
+        margin-left: none;
+         }
+    }
+
+    .flex-align-right{
+        margin-left: auto;
+    }
+    
+    nav a:hover{
+        color:black;
+        background-color: white;
+    }
+
+    section h2 span{
+        background:tomato;
+        background: linear-gradient(90deg, tomato 70%, rgba(0,212,255,1) 95%);
+        padding:10px 55px;
+        border-radius:20px;
+    }
+
+    .carousel-cell {
+        width: 57%;
+         margin-right: 10px;
+        border-radius: 5px;
+    }
+    .carousel-cell video{
+        max-width: 90%;
+        /* max height :50px; */
+        }
+
+        .iframe-container{
+            overflow:hidden;
+           
+            padding-top: 56.26%;
+            position: relative;
+        }
+        .iframe-container iframe{
+            position:absolute;
+            width: 100%;
+            /* max-width: 75%;; */
+            /* max-height:350px; */
+            top:0; left: 0; border:0;
+            height: 55%;
+            padding: 10px;
+            margin-top: 150px;
+            /* padding-top: 250px; */
+        }
+        .img-responsive{
+            max-width: 100vh;
+            height: 100vh;
+        }
+        .ourimg{
+            border-radius: 50%;
+        }
+        .profilename{
+            letter-spacing: 4px;
+            font-weight: 900;
+            font-size: 2em;
+            word-spacing: 5px;
+            text-transform: uppercase;
+            margin: 20px 0px 30px 0px;
+        }
+        .small-handle a{
+            background-color:rgb(125 125 125 / 25%) ;
+            padding:10px 15px;
+            border-radius: 30px;
+            margin:5px;
+            text-decoration: none;
+        }
+        .sm-handle a:hover{
+            background-color:rgb(30 30 30 / 25%) ;
+        }
+        .sm-handle a i{
+            margin:5px;
+        }
+       
+        .insta-handle{
+            color:#fb3958;
+
+        }
+        .facebook-handle{
+            color:#28589c;
+        }
+        .snapchat-handle{
+            color:goldenrod;
+        }
+        .about-us{
+            margin:50px;
+        }
+        .about-title{
+            font-size: 1.45em;
+            padding:0px 10px;
+            color:#120f5e;
+        }
+        .about-content{
+            padding-bottom:10px 0px 20px ;
+            font-weight: 900;
+            color:#1c1a3a;
+        }
+    </style>
+</head>
+    <body>
+    <div class = "banner">
+        <header>
+            <center>    
+            <h1>    SHRI RAM HOSPITAL PALI (RAJ.)   </h1>
+            </center>
+        </header>
+    </div>
+
+    <nav>
+        <a href = "#">Home</a>
+        <a href = "#">Images</a>
+        <a href = "C:\Users\DELL\Desktop\Appointment Form.html">Book Appointment</a>      
+        <a href = "#">About Us</a>
+        <a href = "C:\Users\DELL\Desktop\SRH Contact Us.html">Contact Us</a>
+        <a href = "#" class = "flex-align-right">LOGIN/SIGNUP</a>
+    </nav>
+    <main>
+        <section>
+            <CENTER>
+           <h2><u><span>Best Surgeons</span></u></h2>
+           <!-- Flickity HTML init -->
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+            <div class="carousel-cell"><video src="E:\Web Series 2019\New folder\hostel daze S01EP01 720p.mkv"   controls>HOSTEL DAZE S01EP01</video></div>
+            <div class="carousel-cell"><video src="E:\Web Series 2019\New folder\hostel daze S01EP02 720p.mkv"   controls>HOSTEL DAZE S01EP02</video></div>
+            <div class="carousel-cell"><video src="E:\Web Series 2019\New folder\hostel daze S01EP03 720p.mkv"   controls>HOSTEL DAZE S01EP03</video></div>
+            <div class="carousel-cell"><video src="E:\Web Series 2019\New folder\hostel daze S01EP04 720p.mkv"   controls>HOSTEL DAZE S01EP04</video></div>
+            <div class="carousel-cell"><video src="E:\Web Series 2019\New folder\hostel daze S01EP05 720p.mkv"   controls>HOSTEL DAZE S01EP05</video></div>
+            </div>
+   
+             </CENTER>
+        </section>
+
+        <section>
+            <h2><span><u>Best Physicians</u></span></h2>
+        <div class="carousel"
+        data-flickity='{ "wrapAround": true }'>
+       <div class="carousel-cell iframe-container"><iframe    src="https://www.youtube.com/embed/1VfqlKtVF7U" width = "57%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+       <div class="carousel-cell iframe-container"><iframe    src="https://www.youtube.com/embed/zGJ5BlbKfLM" width = "750px" height="50px" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="carousel-cell iframe-container"> <iframe  src="https://www.youtube.com/embed/j0biLzzJ2XQ" width = "750px"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        </section>
+        
+        <!-- <section>
+            <h2><span><u>Study Material</u></span></h2>
+            <div class="carousel"
+            data-flickity='{ "wrapAround": true }'>
+            
+            <div class = "carousel-cell"><a href = "#"><img src="https://th.bing.com/th/id/OIP.rFgcuyD3jzLwf8ErsWRfRgHaE8?w=262&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" width = "750px" height="50px" class = "img-responsive"></a></div>
+            <div class = "carousel-cell"><a href = "#"><img src="https://th.bing.com/th/id/OIP.rFgcuyD3jzLwf8ErsWRfRgHaE8?w=262&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"width = "750px " height="100px" class = "img-responsive"></a></div>
+            <div class = "carousel-cell"><a href = "#"><img src="https://th.bing.com/th/id/OIP.rFgcuyD3jzLwf8ErsWRfRgHaE8?w=262&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"width = "750px" height="100px" class = "img-responsive"></a></div>
+            <div class = "carousel-cell"><a href = "#"><img src="https://th.bing.com/th/id/OIP.rFgcuyD3jzLwf8ErsWRfRgHaE8?w=262&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"width = "750px" height="100px" class = "img-responsive"></a></div>
+        </section> -->
+
+
+        <section>
+            <center>
+            <h2><span><u>Our Founder</u></span></h2>
+            <img src = "E:\All Files\Rakhi 2021\IMG_20210822_230425.jpg" width = "200px"alt = "This Is Deepesh Agarwal" class = "ourimg">
+            <div class = "profilename"><h3><b><i><u> DEEPESH AGARWAL</u></i></b></h3></div>
+        <p><b>
+            <div class="small-handle">
+            <a href = "Instagram link" target = "_blank" class = "insta-handle"><i class="fa fa-instagram" ></i> INSTAGRAM</a> ||
+            <a href = "FB link" target = "_blank" class = "facebook-handle"><i class="fa fa-facebook" ></i> FACEBOOK</a> ||
+            <a href = "snap_id" target = "_blank" class = "snapchat-handle"><i class="fa fa-snapchat" ></i> SNAPCHAT</a></b></div>
+        </p>
+        <div class = "about-us">
+       <h4>STUDENT AT JIET JODHPUR</h4></div>
+        <div class = "about-content"> I AM DEEPESH AGARWAL, I have completed my senior secondary education  from ST.Paul's Sr. Sec. School, Pali (Raj),
+            and now i am currently pursuing B.Tech Engg in Computer Science & Engg From Jodhpur Institute Of Engg & Tech. Jodhpur.</div>
+        </center>
+        </section>
+    </main>
+
+    <footer>
+        <a href = "#">FAQ</a>
+        <a href = "#">Contact Us</a>
+        <a href = "#">Terms Of Use</a>
+        <a href = "#">Privacy Policy</a>
+        <a href = "#">Refund Policy</a>
+        
+        <a class = "flex-align-right" href = "#">&copy;2021 | ShriRam Hospital Pali</a>
+    </footer>
+    <!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    </body>
+</html>
